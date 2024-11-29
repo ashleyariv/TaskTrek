@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Titillium Web", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    background: linear-gradient(#298c33, #125c1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: "New Century Schoolbook", "TeX Gyre Schola", serif;;
+}
+
+#task-input {
+    width: 400px;
+    padding: 8px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.task-description {
+    width: 70%;
+    margin: 0 0 0 3%;
+    padding: 2% 0 0 1%;
+}
+
+li {
+    list-style-type: circle;
+}
+
+li::marker {
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#submit-btn {
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.edit-btn {
+    background-color: lightgoldenrodyellow;
+    border-radius: 5px;
+}
+
+.edit-btn:active,
+.delete-btn:active,
+#submit-btn:active {
+    transform: translateY(3px);
+}
+
+.delete-btn {
+    background-color: red;
+    border-radius: 5px;
+}
+
+input[id^="check-task"] {
+    transform: scale(1.4);
+}
+
+#main-content {
+    width: 75%;
+    position: relative;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px 20px 18px 18px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px #333;
+}
+
+#list {
+    width: 70%;
+    margin: 5%;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 15px 20px 18px 18px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px #333;
+}

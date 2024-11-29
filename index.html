@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskTrek</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="main-content">
+    <h1>TaskTrek</h1>
+    <form id="create-task-form" onsubmit="addTask(event)">
+      <label for="taskInput">Task Description:</label>
+      <input type="text" id="task-input" placeholder="Add a new task..." autocomplete="off">
+      <input type="submit" id="submit-btn" value="Add Task">
+    </form>
+
+    <div id="list">
+      <h2>My To-Do List:</h2>
+      <ul id="taskList">
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
